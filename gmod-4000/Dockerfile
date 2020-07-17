@@ -2,6 +2,7 @@ FROM cm2network/steamcmd
 
 # Instal dependencies
 USER root
+RUN apt-get update -y
 RUN apt-get install -y gdb
 
 # Create Gameserver
